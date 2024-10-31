@@ -10,11 +10,13 @@ Only two classes are needed to make this work, one for the Joints themselves, an
 | :-: | :-: |
 | ![Joint Class](https://github.com/user-attachments/assets/63483057-caad-4dbb-981b-a39aa36fa013) | ![IK_Manager Class](https://github.com/user-attachments/assets/ec1abfed-0f90-415f-b03e-9af1321e8b86) |
 
-The rotation of each slope is calculated by:
+## Calculating Rotation
+The rotation of each joint is calculated by:
 - Finding the distance between the root joint and the target,
 - Rotating the joint by a set amount (0.01 radians),
-- Checking the new distance,
+- Finding the new distance between joint and target,
 - Then rotating back to its original position,
+Then, we go move to the child node and repeat
 
-From this information, we can work out the gradient of the graph of Distance (to target) over Angle (of Joint), which tells us the direction to rotate the object, and how much to rotate the it by.
+Using this, we can work out the gradient of the graph of Distance (to target) over Angle (of Joint), which tells us the direction to rotate the object, and how much to rotate the it by.
 ![Graph](https://github.com/user-attachments/assets/124a7910-a995-41ae-b80a-076c94ed2855)
