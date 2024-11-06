@@ -7,7 +7,7 @@ A repo of my personal projects involving Inverse Kinematics, for Procedural Anim
 # 2D Inverse Kinematics Armature
 ![2D_IK_Simple](https://github.com/user-attachments/assets/771e7096-6271-4fad-81bf-f45748e00489)
 
-This is a very basic implementation of Inverse Kinematics, calculating the rotation of each joint based on the distance from the Target.
+This is a very basic implementation of Inverse Kinematics, calculating the rotation of each joint based on the distance between the End Joint and the Target.
 
 Note: This is not my own design, my understanding and the implementation of this comes from ![this video](https://www.youtube.com/watch?v=VdJGouwViPs&t=927s), I only recreated it with the intent to learn and build off of it.
 
